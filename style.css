@@ -1,0 +1,21 @@
+body {
+    padding: 50px;
+    background-color: lavender;
+    font-family: sans-serif;
+}
+
+img {
+  border-radius: 50%;
+}
+
+  h1 {
+      font-size: 40px;
+  }
+  
+  
+.head {
+    font-size: 20px; font-variant: small-caps;
+    }
+
+
+

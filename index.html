@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Qualifications of Sally Student as a web designer">
+    <meta name="author" content="Sally Student">
+    <title>Sally Student Resume</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="application-root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
+
+     function App(props) {
+         return (
+            <div>
+                <header>
+                    <h1>{props.name}</h1>
+                    <address>
+                        <p>ABC Lane, Somewhere, California 91111  | 555-555-5555  |  sallystudent@myemail.com</p>
+                    </address>
+                </header>
+
+                <img src="SallyStudentResumeImage.jpg" alt="image of Sally Student" height="125px" />
+
+                <section>
+                    <p class="head">Professional Summary</p>
+                    <i>Highly capable web designer skilled at creating unique websites that bring results.</i>
+                </section>
+
+                <section>
+                    <p class="head">Skills</p>
+                    <ul>
+                        <li>HTML5, CSS, JS, jQuery</li>
+                        <li>WordPress</li>
+                        <li>Drupel</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>Time management</li>
+                        <li>Team player</li>
+                        <li>Creative</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p class="head">Work History</p>
+                    <ul>
+                        <li><b>Be The One</b>, Somewhere, California |  <i>October 2017 - Present</i>
+                            <p>Create interactive and responsive web apps.</p>
+                        </li>
+
+                        <li><b>GamesRUs</b>, Somewhere, California |  <i>January 2014 - September 2017</i>
+                            <p>Create games for all ages.</p>
+                        </li>
+                        <li><b>Ultimate Designs</b>, Somewhere, California  |  <i>June 2012 - December 2013</i>
+                            <p>Junior developer collaborating on web design and games</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p class="head">Education</p>
+                    University of Creative Skills  |  B.A. in Graphic Design, 2012
+                </section>
+
+             </div>
+        );
+    }   
+
+    ReactDOM.render(
+        <App className='my-class' name="Sally Student">
+            <h1>Page Title</h1>
+        </App>,
+        document.querySelector('#application-root')
+    );
+    </script>
+</body>
+
+</html>
